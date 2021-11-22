@@ -8,7 +8,7 @@ def randommenm(aantal):
     for x in range (aantal):
         zakm = random.choice(mm)
         b.append(zakm)
-    print (b)    
+    print (*b)    
 
 
 randommenm(aantal)
