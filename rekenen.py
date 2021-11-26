@@ -35,6 +35,7 @@ def keer():
     keerlist = [getal_1,keert,getal_2,isteken,eind]
     for a in zip(*keerlist):
         print(*a)
+        
 def gedeeld():
     print()
     print("-----------------")

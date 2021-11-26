@@ -1,5 +1,6 @@
 import random 
 mm = ["oranje","bruin","blauw","groen"]
+zak= [ ]
 aantal = int(input("hoeveel m&m's wilt u? "))
 damm={
 
@@ -20,16 +21,20 @@ def aantalmm():
     damm["bruin"] = color4
 
 def randommenm():
-    global zakm, color1,color2,color3,color4
+    global zak, color1,color2,color3,color4
     for x in range(aantal):
-        zakm = random.choice(mm)
+        randommm=random.choice(mm)
+        zakm = randommm
+        zak.append(randommm)
         mm.append(zakm)
         color1 += zakm.count("groen")
         color2 += zakm.count("blauw")
         color3 += zakm.count("oranje")
         color4 += zakm.count("bruin")
+        
 
 
 randommenm()
 aantalmm()
 print(damm)
+print(zak)
